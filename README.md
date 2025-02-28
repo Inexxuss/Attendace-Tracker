@@ -1,7 +1,7 @@
 # Attendance Tracker
 
 ## Overview
-The **Attendance Tracker** is a Python-based employee attendance system that utilizes QR code scanning to log check-in and check-out times. It features a Tkinter-based user interface and stores attendance records in JSON and Excel formats.
+The Attendance Tracker is a Python-based employee attendance system that utilizes QR code scanning to log check-in and check-out times. It features a Tkinter-based user interface and stores attendance records in JSON and Excel formats.
 
 ## Features
 - **QR Code Scanning**: Uses OpenCV to detect and decode QR codes containing employee information.
@@ -11,28 +11,35 @@ The **Attendance Tracker** is a Python-based employee attendance system that uti
 - **Excel and JSON Data Export**: Automatically saves attendance records and allows manual download in Excel and JSON formats.
 - **Daily Data Reset**: Resets the interface daily while preserving accumulated attendance data.
 - **Overtime and Worktime Calculation**: Automatically calculates work hours and overtime based on predefined rules.
-- **Auto-Save Feature**: Automatically saves attendance records at a scheduled time.
+- **Auto-Save Feature**: Automatically saves attendance records daily at a scheduled time.
+- **Sound Notifications**: Beep sound feedback for successful scans.
+- **Auto-Save Attendance Data**: Saves attendance records daily at 10:01 PM.
+- **Employee Count Display**: Shows the number of workers scanned for the day.
+- **Customizable Notification System**: Pop-up notifications for user actions.
 
 ## System Requirements
 - Python 3.x
 - Required Python Libraries:
-  - `opencv-python`
+  ```bash
+  pip install opencv-python openpyxl
+  ```
+- Additional built-in libraries used:
   - `tkinter`
-  - `openpyxl`
   - `json`
   - `re`
   - `datetime`
   - `time`
   - `os`
+  - `winsound`
 
 ## Installation
 1. Clone the repository or download the source code.
 2. Install the required dependencies:
-   ```sh
+   ```bash
    pip install opencv-python openpyxl
    ```
 3. Run the application:
-   ```sh
+   ```bash
    python attendance_tracker.py
    ```
 
@@ -47,7 +54,7 @@ The **Attendance Tracker** is a Python-based employee attendance system that uti
 6. **Automatic Saving**: The system auto-saves attendance data daily.
 
 ## Troubleshooting
-- If the application does not start, use **A-Tracker no icon.exe** instead.
+- If the application does not start, use `A-Tracker no icon.exe` instead.
 - Icons for the application can be downloaded from the provided Google Drive link.
 
 ## Data Storage
@@ -58,8 +65,8 @@ The **Attendance Tracker** is a Python-based employee attendance system that uti
 This project is licensed under the MIT License.
 
 ## Author
-Tolentino, Ian
+**Ian Tolentino**
 
 ## Contact
-For inquiries, suggestions, or bug reports, please contact iantolentino0110@gmail.com.
+For inquiries, suggestions, or bug reports, please contact: iantolentino0110@gmail.com
 
